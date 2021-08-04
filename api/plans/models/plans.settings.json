@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "name": "Plans"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "size": {
+      "type": "biginteger"
+    },
+    "date": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
